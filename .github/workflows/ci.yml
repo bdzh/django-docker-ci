@@ -32,9 +32,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Check Syntax
-        run: pycodestyle --statistics .
-
       - name: Run Test
         run: python manage.py test
   build_and_push:
