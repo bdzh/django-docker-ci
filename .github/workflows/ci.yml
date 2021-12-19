@@ -29,9 +29,6 @@ jobs:
       - name: Run Migrations
         run: python manage.py migrate
 
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Run Test
         run: python manage.py test
   build_and_push:
